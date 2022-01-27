@@ -26,41 +26,42 @@ public class WindowAnalisis extends JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        FPResult = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        botonPFNA = new javax.swing.JButton();
+        BotonPFc = new javax.swing.JButton();
+        botonFP = new javax.swing.JButton();
+        botonFN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
-        jButton1.setText("PFNA");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botonPFNA.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        botonPFNA.setText("Mostrar PFNA");
+        botonPFNA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botonPFNAActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton2.setText("Ajuste de PF características generales ");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        BotonPFc.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        BotonPFc.setText("Ajuste de PF características generales ");
+        BotonPFc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                BotonPFcActionPerformed(evt);
             }
         });
 
-        FPResult.setText("Resultado FP");
-        FPResult.addActionListener(new java.awt.event.ActionListener() {
+        botonFP.setText("Resultado FP");
+        botonFP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FPResultActionPerformed(evt);
+                botonFPActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
-        jButton3.setText("Ajuste Final de PF");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        botonFN.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        botonFN.setText("Ajuste Final de PF");
+        botonFN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                botonFNActionPerformed(evt);
             }
         });
 
@@ -68,44 +69,50 @@ public class WindowAnalisis extends JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(botonPFNA)
+                .addGap(115, 115, 115))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton3)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(FPResult)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(BotonPFc, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(botonFP))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(botonFN)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(jButton1)
+                .addComponent(botonPFNA)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FPResult, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonFP, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotonPFc, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(botonFN)
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
-        jButton2.getAccessibleContext().setAccessibleDescription("");
+        BotonPFc.getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void botonPFNAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPFNAActionPerformed
         new PFNATabla(pfna).setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_botonPFNAActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void BotonPFcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPFcActionPerformed
         FrameAjuste.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_BotonPFcActionPerformed
 
-    private void FPResultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FPResultActionPerformed
+    private void botonFPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonFPActionPerformed
         if(this.FrameAjuste.getResultadoFA() == -1 ){
             JOptionPane.showMessageDialog(this, "Los datos son incorrectos, resuerda que todos los\nvalores deben estar comprendido\nentre 0 & 5 ","Error", 0);             
         }else if((this.FrameAjuste.getResultadoFA() < 0 && this.FrameAjuste.getResultadoFA() != -1) || this.FrameAjuste.getResultadoFA() > 70){
@@ -113,17 +120,22 @@ public class WindowAnalisis extends JFrame {
         }else{
             JOptionPane.showMessageDialog(this, "La suma total es " + FrameAjuste.getResultadoFA(), "Resultado", 1); 
         }
-    }//GEN-LAST:event_FPResultActionPerformed
+    }//GEN-LAST:event_botonFPActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        JOptionPane.showMessageDialog(this, "El resultado vendré regido de esta fórmula: PFA = PFNA * FA\n"+
-                                            "Siendo:\n"+
-                                            "\t-PFA: Puntos de función ajustados\n" +
-                                            "\t-PFNA: Puntos Función no ajustado\n" +
-                                            "\t-FA: Factor de ajuste\n" +
-                                            "\t-SVA: Suma de los valores de los atributos.\n"+
-                                            "En este caso: PFA=" + this.pfna.getTotal()+"+"+"(0.01*" + FrameAjuste.getResultadoFA()+ ")=" + (this.pfna.getTotal()+(0.01*FrameAjuste.getResultadoFA())), "Resultado PFA", 1); 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void botonFNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonFNActionPerformed
+        if (FrameAjuste.getResultadoFA() != -1) {
+            JOptionPane.showMessageDialog(this, "El resultado vendré regido de esta fórmula: PFA = PFNA * FA\n"
+                    + "Siendo:\n"
+                    + "\t-PFA: Puntos de función ajustados\n"
+                    + "\t-PFNA: Puntos Función no ajustado\n"
+                    + "\t-FA: Factor de ajuste\n"
+                    + "\t-SVA: Suma de los valores de los atributos.\n"
+                    + "En este caso: PFA=" + this.pfna.getTotal() + "+" + "(0.01*" + FrameAjuste.getResultadoFA() + ")=" + (this.pfna.getTotal() + (0.01 * FrameAjuste.getResultadoFA())), "Resultado PFA", 1);
+
+        }else{
+            JOptionPane.showMessageDialog(this, "El Resultado FA es incorrecto, revisa la tabla.", "Error", 0); 
+        }       
+    }//GEN-LAST:event_botonFNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -161,9 +173,9 @@ public class WindowAnalisis extends JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton FPResult;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton BotonPFc;
+    private javax.swing.JButton botonFN;
+    private javax.swing.JButton botonFP;
+    private javax.swing.JButton botonPFNA;
     // End of variables declaration//GEN-END:variables
 }

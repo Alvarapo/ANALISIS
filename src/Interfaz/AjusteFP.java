@@ -5,13 +5,14 @@
  */
 package Interfaz;
 
+import Datos.DatosAtributos;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Usuario
+ * @author Ignacio Andreu
  */
 public class AjusteFP extends javax.swing.JFrame {
 
@@ -49,53 +50,16 @@ public class AjusteFP extends javax.swing.JFrame {
         jtbtabla.getColumnModel().getColumn(1).setPreferredWidth(10); 
     }    
     
-    private void drawDataRegistros() {    
+      private void drawDataRegistros() {    
+        //IGNA
         Object[] columna = new Object[2];
-
-        //ENTRADAS EXTERNAS
-        columna[0] = "Comunicación de datos";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);                
-        columna[0] = "Funciones Distribuidas";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Prestaciones";
-        modeloTabla.addRow(columna);
-        columna[0] = "Gran Uso de la configuración";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Velocidad de las transacciones";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Entrada de datos en línea";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Diseño para la eficiencia del usuario final";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Actualización de datos en línea";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Complejidad del proceso lógico interno de la aplicación";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Reusabilidad del código";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Facilidad de instalación";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Facilidad de operación";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Localizaciones múltiples";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        columna[0] = "Facilidad de cambios";
-        columna[1] = "0";
-        modeloTabla.addRow(columna);
-        
-            }
+       
+        for (int i = 0; i < DatosAtributos.descripcion.length; i++) {
+            columna[0] = DatosAtributos.descripcion[i];
+            columna[1] = "0";
+            modeloTabla.addRow(columna);  
+        }
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
