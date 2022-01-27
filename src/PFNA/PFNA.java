@@ -123,4 +123,23 @@ public class PFNA {
         return datos;
     }
     
+    public int getTotalPFEntradasExternas(){
+        return totalPFEntradasExternas;
+    }
+    
+    public int getTotalPFSalidasExternas(){
+        return totalPFSalidasExternas;
+    }
+    
+    public int getTotalPFDatosInternos(){
+        return totalPFDatosInternos;
+    }
+    
+    public int getTotalPFDatosInterfaz(){
+        return totalPFDatosInterfaz;
+    }
+    
+    public int getTotalPFConsultasExternas(){
+        return totalPFConsultasExternas;
+    }
 }

@@ -10,6 +10,7 @@ import IFPUG.EntradasExternas;
 import IFPUG.GrupoLogicoDatosInterfaz;
 import IFPUG.GrupoLogicoDatosInternos;
 import IFPUG.SalidasExternas;
+import java.util.Scanner;
 
 /**
  *
@@ -35,6 +36,9 @@ public class PuntoFuncionCMEPPS {
         
         ConsultasExternas consultas = new ConsultasExternas(salext, entext);
         System.out.println("ConsultasExternas----El resultado es " + consultas.getResultString() + " en integer es " + consultas.getResultInt());
+        
+      
+     
     }
     
 }
