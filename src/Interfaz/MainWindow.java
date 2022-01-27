@@ -12,8 +12,6 @@ import IFPUG.GrupoLogicoDatosInternos;
 import IFPUG.SalidasExternas;
 import PFNA.PFNA;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -85,7 +83,7 @@ public class MainWindow extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         generarAnalisis = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
         jLabel1.setText("Grupo Lógicos de datos internos: ");
@@ -459,6 +457,8 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void generarAnalisisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generarAnalisisActionPerformed
         this.pfna = new PFNA(grupoLogicoDatosInterfazList, grupoLogicoDatosInternosList, entradasExternasList, salidasExternasList, consultasExternasList);
+        this.setVisible(false);
+        new WindowAnalisis(pfna).setVisible(true);
     }//GEN-LAST:event_generarAnalisisActionPerformed
 
     /**
